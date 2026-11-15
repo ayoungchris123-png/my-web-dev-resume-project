@@ -1,0 +1,121 @@
+﻿/* UNIVERSAL SETTINGS */
+
+* { /*UNIVERSAL SELECTOR*/
+    box-sizing: border-box; 
+}
+
+/* SHARED SETTINGS */
+
+body { /*ELEMENT SELECTOR*/
+    font-family: Calibri, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 4px double #0055a5;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08), 0 4px 6px rgba(0, 0, 0, 0.04);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#app-contents {
+    display: flex;
+    padding: 0px;
+    gap: 15px;
+    justify-content: center;
+}
+
+.app-link {
+    flex: 1; 
+    text-align: center;
+    padding: 15px;
+    background-color: lightsteelblue;
+    border-radius: 6px;
+    color: #1e293b;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* MAIN HEADINGS */
+
+h1 {
+    color: #003366;
+    border-bottom: 2px solid #003366;
+}
+
+h2 {
+    color: #0055a5;
+    margin-top: 10px;
+    margin-bottom: -10px;
+    border-bottom: 2px solid #003366;
+}
+
+main a:hover { /* PSEUDO-CLASS SELECTOR */
+    color: #d97706;
+    text-decoration: underline;
+}
+
+/* NAV ELEMENTS */
+
+nav h3 { /*DESCENDANT SELECTOR*/
+    margin-top: -10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: upper-roman;
+    margin-top: -15px;
+}
+
+nav a:hover {
+    color: #d97706;
+    text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+    font: italic 16px/1.5 Calibri, sans-serif;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* RESUME ONLY*/
+
+/*LISTS*/
+
+.resume ul {
+    list-style-type: square;
+    margin-top: -15px;
+}
+/* TABLE */
+.resume table { /*CLASS SELECTOR*/
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #cccccc;
+}
+
+#table-captions { /*ID SELECTOR*/
+    margin-top: 18px;
+    margin-bottom: -14px;
+    font-style: italic;
+}
+
+.resume th, .resume td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.resume th {
+    background-color: lightsteelblue;
+    text-align: center;
+}
+
+/*CAREER GOALS ONLY*/
+
+.career-goals main ul {
+    list-style-type: square;
+}
