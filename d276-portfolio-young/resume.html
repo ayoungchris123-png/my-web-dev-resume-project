@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Johnny Science's Resume</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="resume">
+    <nav>
+        <h1>Johnny Science</h1>
+        <h3>Application Contents</h3>
+        
+        <div id="app-contents">
+            <a href="resume.html" target="_blank" class="app-link">Resume</a>
+            <a href="cover-letter.html" target="_blank" class="app-link">Cover Letter</a>
+            <a href="career-goals.html" target="_blank" class="app-link">Career Goals</a>
+        </div>
+
+    </nav>
+
+    <main>
+        <header id="summary">
+            <h2>About Me</h2>
+            <p><em>Charlotte, NC | (123) 456-7891 | <a href="https://www.gmail.com/" target="_blank">johnnyscience@gmail.com</a></em></p>
+
+            <article>
+                <p>
+                    I am a former science teacher seeking an <strong>investigative position</strong> in the FBI, X-Files division. Skilled in chemistry, physics, and the food service industry.
+                </p>
+            </article>
+        </header>
+
+        <section id="skills">
+            <h2>Skills, Awards, and Certifications</h2>
+            <table>
+                <caption id="table-captions">Skills, Awards, and Certifications Overview<br><br></caption>
+                <thead>
+                    <tr>
+                        <th>Soft Skills</th>
+                        <th>Hard Skills</th>
+                        <th>Awards</th>
+                        <th>Certifications</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Conflict Resolution</td>
+                        <td>Potion-Making</td>
+                        <td>Teacher of the Year</td>
+                        <td>Science Certification</td>
+                    </tr>
+                    <tr>
+                        <td>Adaptability</td>
+                        <td>Floor-mopping</td>
+                        <td>Harvard Chemistry Whiz</td>
+                        <td>Cool Person Cert</td>
+                    </tr>
+                    <tr>
+                        <td>Dependable</td>
+                        <td>Staging</td>
+                        <td>Employee of the Week</td>
+                        <td>SafeServ Certification</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="education">
+            <h2>Technical Skills and Education</h2>
+            <article>
+                <h3><em>Harvard-Yale University | Master's of Science in Being Awesome</em></h3>
+                <ul>
+                    <li>Completed Coursework: Spycraft 101, Space Chemistry 540, Art Therapy 101</li>
+                    <li>In-progress Coursework: Driving 101, Evasive Manuevers 231</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <article>
+                <h3><em>Teacher | ABC School | Nowhere, SC | Sept 2026 — Present</em></h3>
+                    <ul>
+                        <li>Curriculum planning: experienced in creating curriculum tailored to individual classes from scratch.</li>
+                        <li>Data Analysis: experienced in reviewing data from formative and summative assessments to plan instruction.</li>
+                    </ul>
+                <h3><em>Cashier | McDonalds | Nowhere, NC | Sept 2017 - Sept 2026</em></h3>
+                    <ul>
+                        <li>Cash-Handling: operated the cash register system with perfect accuracy 24/7.</li>
+                        <li>Customer-Service Skills: greeted and assisted customers with a perfectly cool, calm demeanor while evaluating their likelihood of being spies.</li>
+                    </ul>
+            </article>
+        </section>
+        <hr />
+    </main>
+
+    <footer>
+        <span>Johnny Science's Resume</span>
+        <div id="resume-currentDay">
+            <p id="date-output"></p>
+        </div>
+    </footer>
+
+    <script>
+            // Script to pull the current date
+            const today = new Date(); // This piece declares the constant variable to be equal to the browser's internal clock's time, including sec/min/hour/day/month/year. 
+            const formattedDate = today.toLocaleDateString(); // This one refines data stored inside 'today' to a string month/day/year using a built-in JS method. 
+            document.getElementById("date-output").textContent = "Today's Date: " + formattedDate; // document refers to the HTML page. .getElementById looks for a specific ID.
+            // In this case, the ID it finds is a <p> element. The last part, .textContent, tells JS what to print inside <p>. 
+
+            // Message to the Console
+            let currDay = today.getDay(); // This takes the date value stored inside 'today' and converts it into a numerical value from 0 to 6. 
+            console.log("Current day index: " + currDay , ". It's a good day to be Johnny Science!"); // Prints a message to the console.
+    </script>
+
+</body>
+</html>
